@@ -6,14 +6,20 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 
 ## Assessment
  ### 1. Show evidence of a learning outcome you have achieved this week.
-> **[Learning outcome...]**  
-> [your evidence here]
+ 
+ #### Conditionally set ports for our server based on the runtime environment
+
+- By creating a constant PORT and *assigning* it `process.env.PORT`, the port the server runs on can be set via an environmental variable when starting the server, e.g. `PORT=7777 node index.js`. If no environmental variable is passed in, then `process.env.PORT` will be `undefined`, which evaluates to **falsey** and PORT will be assigned the value of 3000 as well due to the OR operator `||`.
+```js
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => console.log(`listening at http://localhost:${PORT}`));
+```
 
  ### 2. Show an example of a learning outcome you have struggled with and/or would like to re-visit.
-> [**Learning outcome...**]  
-> [your evidence here]
+ #### Write tests with the built-in Node Test Runner
+
+- Writing back-end tests turned out to be a lot more complicated an affair than the simple synchronous function tests for javascript code running in the browser I'd done up to this point. It was a very productive experience though, and I'll keep practicing!
 
 ## Feedback
-> [**Course Facilitator name**]  
-> [*What went well*]  
-> [*Even better if*]
+#### Mark Hanley
+- Mark was super helpful, and very knowledgable whenever we ran into technical difficulties.
