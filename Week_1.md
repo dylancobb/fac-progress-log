@@ -23,3 +23,10 @@ server.listen(PORT, () => console.log(`listening at http://localhost:${PORT}`));
 ## Feedback
 #### Mark Hanley
 - Mark was super helpful, and very knowledgable whenever we ran into technical difficulties.
+
+> Beth
+
+> You've shown a clear understanding of environment variables for setting the port ⚡️
+
+> Consider taking on the QA role in a future project. A good place to start is selecting a simple server route within the project and writing tests for it independently. You can also explore asynchronous testing. Practice handling asynchronous code, using tools like async/await or promises, to ensure your tests can handle real-world scenarios effectively 🦑
+
