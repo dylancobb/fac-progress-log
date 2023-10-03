@@ -25,7 +25,7 @@ const db = new Database(process.env.DB_FILE || 'db.sqlite')
 > Excellent job using environment variables for database initialisation! As a next step, consider diving deeper into managing and securing environment variables, especially when deploying to various environments 💥
 
 > Another team used multiple joins to access data from multiple tables. Here is the code:
-> ```
+```
 const select_venue_info = db.prepare(/*sql*/ `
     SELECT
         v.name AS venueName,
