@@ -25,6 +25,7 @@ const db = new Database(process.env.DB_FILE || 'db.sqlite')
 > Excellent job using environment variables for database initialisation! As a next step, consider diving deeper into managing and securing environment variables, especially when deploying to various environments 💥
 
 > Another team used multiple joins to access data from multiple tables. Here is the code:
+> ```
 const select_venue_info = db.prepare(/*sql*/ `
     SELECT
         v.name AS venueName,
@@ -38,10 +39,11 @@ const select_venue_info = db.prepare(/*sql*/ `
     LEFT JOIN cuisine AS c ON vc.cuisine_id = c.id
     GROUP BY v.id
 `);
-Here is a breakdown of the join statements:
-JOIN location AS l ON v.location_id = l.id: Joins venue with the location table based on matching location_id and id in venue and location respectively.
-LEFT JOIN venue_cuisine AS vc ON v.id = vc.venue_id: Performs a LEFT JOIN with venue_cuisine where the id in venue matches venue_id in venue_cuisine.
-LEFT JOIN cuisine AS c ON vc.cuisine_id = c.id: Further joins cuisine table where cuisine_id in venue_cuisine matches id in cuisine.
+```
+> Here is a breakdown of the join statements:
+> - JOIN location AS l ON v.location_id = l.id: Joins venue with the location table based on matching location_id and id in venue and location respectively.
+> - LEFT JOIN venue_cuisine AS vc ON v.id = vc.venue_id: Performs a LEFT JOIN with venue_cuisine where the id in venue matches venue_id in venue_cuisine.
+> - LEFT JOIN cuisine AS c ON vc.cuisine_id = c.id: Further joins cuisine table where cuisine_id in venue_cuisine matches id in cuisine.
 
-Hopefully this provides you with some inspiration for using joins in the future! 
+> Hopefully this provides you with some inspiration for using joins in the future! 
 
