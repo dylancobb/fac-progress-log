@@ -77,6 +77,13 @@ function createPost(user) {
 > I wasn't really doing DevOps this week, so I'd like to revisit this as I'm not confident on it yet.
 
 ## Feedback
-> [**Course Facilitator name**]  
-> [*What went well*]  
-> [*Even better if*]
+### Alphonso's Feedback
+#### What Went Well
+Love the example on showing different content depending on a session and particularly that you delved a bit deeper into *how* the content varies for a user that is logged in.
+I think a bit of an insight into this line would be a good idea too - ```const users = getUserList(isWizard ? 0 : 1);```
+When I did a review of your codebase this was a nice stand out and it shows what I think is a nice and clean approach to personalising the data on screen with minimal querying.
+
+#### Even Better If
+The CI/CD pipeline can quickly become a massive rabbit whole to look into at the moment but one thing you coud easily start exploring is easy automation tools like husky, which I remember was discussed among the cohort before but was not in the last project repos.
+It's a simple way to guarantee linting and testing, for example, happen at specific points (like, before someone pushes new code to origin) and it can get you thinking more broadly about the pipeline without getting too complex for the size of the projects you're currently working on.
+There's a nifty guide [here](https://www.npmjs.com/package/husky)
