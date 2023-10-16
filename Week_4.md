@@ -46,6 +46,8 @@ saveButton.addEventListener('click', () => {
 > I didn't get a chance to work on implementing OAuth login this week, and it looks like a rather important technology to understand. Hopefully I'll revisit it soon.
 
 ## Feedback
-> [**Course Facilitator name**]  
-> [*What went well*]  
-> [*Even better if*]
+> Beth
+
+> Utilising the canvas.toDataURL() method to obtain the image's Base64 representation is efficient and makes storing to the database straightforward 👏
+
+> Begin your journey with OAuth by understanding its flow, purpose, and key terms. [This video](https://www.youtube.com/watch?v=996OiexHze0) is a great place to start. Once you've got the basics, try integrating a simple OAuth login feature using Google or GitHub as providers.
