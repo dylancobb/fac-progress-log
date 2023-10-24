@@ -65,6 +65,9 @@ When any cell needs to change the state, the data object can be indexed into, ch
 > I didn't get an opportunity to use the useEffect hook, nor any custom hooks, this week. I'd definitely like to re-visit these and make sure I'm confident I understand their usage.
 
 ## Feedback
-> [**Course Facilitator name**]  
-> [*What went well*]  
-> [*Even better if*]
+### Alphonso's feedback
+#### What Went Well
+This is a great example of a raised state! The shift in thinking that you highlighted here is exactly the main challenge when you move onto working with React.
+
+#### Even Better If
+There's quite a bit of material out there about the different hooks available but if you want to look at an example applied to the codebase of another group in the cohort there is this [review of PetProgrammer](https://github.com/fac28/PetProgrammer/issues/27) I submitted that talks a bit about a case in their code that *could* have been addressed with a `useEffect`
