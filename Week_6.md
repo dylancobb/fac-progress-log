@@ -14,6 +14,8 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 > Reading the provided article on serverless functions didn't feel like enough for things to click just yet. I'd like to try actually using them soon.
 
 ## Feedback
-> [**Course Facilitator name**]  
-> [*What went well*]  
-> [*Even better if*]
+> Beth
+  
+> Well done for using the official documentation as a resource. This will definitely come in handy in the future!
+
+> You’re right about needing hands-on experience to fully understand serverless architecture. I would suggest a very small project with a simple serverless function using AWS Lambda. You can ask chatgpt to provide you with a short mock-up.
